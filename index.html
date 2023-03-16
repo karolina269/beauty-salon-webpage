@@ -8,7 +8,7 @@
     <title>SPA Project</title>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@600&family=Satisfy&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600&family=Satisfy&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -18,39 +18,46 @@
 <body>
 
     <nav class="main-nav">
+        <div class="container">
+            <div class="main-nav-wrapper">
 
-        <div class="mobile-hamburger">
-            <i class="bi bi-list"></i>
-            <i class="bi bi-x"></i>
+                <div class="mobile hamburger"><i class="bi bi-list"></i></div>
+
+                <div class="mobile close"><i class="bi bi-x"></i></div>
+
+                <ul class="menu">
+                    <li class="menu-item"><a href="#main">Home</a></li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#treatments">Treatments</a></li>
+                    <li class="menu-item"><a href="#team">Team</a></li>
+                    <li class="menu-item"><a href="#contact">Contact</a></li>
+                    <li class="menu-item"><input type="text"><i class="bi bi-search"></i></li>
+                    <li class="social-media">
+                        <ul class="social-media-list">
+                            <li class="social-media-item"><a href=""><i class="bi bi-twitter"></i></a></li>
+                            <li class="social-media-item"><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li class="social-media-item"><a href=""><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-
-        <ul class="menu">
-            <li class="menu-item"><a href="">Home</a></li>
-            <li class="menu-item"><a href="">About</a></li>
-            <li class="menu-item"><a href="">Feauture</a></li>
-            <li class="menu-item"><a href="">Service</a></li>
-            <li class="menu-item"><a href="">Contact</a></li>
-        </ul>
-
-        <ul class="social-media">
-            <li class="social-media-item"><a href=""><i class="bi bi-twitter"></i></a></li>
-            <li class="social-media-item"><a href=""><i class="bi bi-facebook"></i></a></li>
-            <li class="social-media-item"><a href=""><i class="bi bi-instagram"></i></a></li>
-        </ul>
-
     </nav>
 
-    <section class="main">
+    <section id="main" class="main">
         <div class="container">
             <header class="main-header">
-                <img class="logo" src="img/logo-txt.png" alt="logo of spa center">
+                <img class="logo" src="img/logo-txt.png" alt="SPA center logo">
                 <h1>
                     <strong>Spa & beauty</strong><br>
                     <span>Wellness Center</span>
                 </h1>
                 <p>Indulge in a pampering experience like no other at our beauty salon. Our team of skilled
                     professionals
-                    are dedicated to helping you look and feel your best.</p>
+                    are dedicated to helping you look and feel your best. Escape the stresses of everyday life and treat
+                    yourself to a luxurious beauty experience that will leave you feeling refreshed, rejuvenated, and
+                    ready to take on the world.</p>
                 <a href="" class="btn">Book now</a>
             </header>
             <div class="main-image-wrapper">
@@ -62,10 +69,11 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <img class="logo" src="img/logo.png" alt="logo">
             <header class="section-header">
+                <p class="section-header-description">About our spa center</p>
                 <h2>Discover inner peace...</h2>
                 <p>Step into our world of beauty and wellness where inspiration awaits. Our expert team of beauty
                     professionals
@@ -79,37 +87,37 @@
     <section class="gallery">
         <div class="gallery-wrapper">
             <a href="" class="gallery-item">
-                <img src="img/gallery-1.jpg" alt="service 1">
-                <div class="gallery-overlay">
-                    <img src="img/icon-spa.png" alt="">
-                    <h3>Service 1</h3>
+                <img class="gallery-item-image" src="img/gallery-1.jpg" alt="Massage">
+                <div class="gallery-item-overlay">
+                    <img class="overlay-icon" src="img/icon-spa.png" alt="">
+                    <h3>Massage</h3>
                 </div>
             </a>
             <a href="" class="gallery-item">
-                <img src="img/gallery-2.jpg" alt="service 2">
-                <div class="gallery-overlay">
-                    <img src="img/icon-spa.png" alt="">
-                    <h3>Service 2</h3>
+                <img class="gallery-item-image" src="img/gallery-2.jpg" alt="Relaxation">
+                <div class="gallery-item-overlay">
+                    <img class="overlay-icon" src="img/icon-spa.png" alt="">
+                    <h3>Relaxation</h3>
                 </div>
             </a>
             <a href="" class="gallery-item">
-                <img src="img/gallery-3.jpg" alt="service 3">
-                <div class="gallery-overlay">
-                    <img src="img/icon-spa.png" alt="">
-                    <h3>Service 3</h3>
+                <img class="gallery-item-image" src="img/gallery-3.jpg" alt="Face mask">
+                <div class="gallery-item-overlay">
+                    <img class="overlay-icon" src="img/icon-spa.png" alt="">
+                    <h3>Face mask</h3>
                 </div>
             </a>
             <a href="" class="gallery-item">
-                <img src="img/gallery-4.jpg" alt="service 4">
-                <div class="gallery-overlay">
-                    <img src="img/icon-spa.png" alt="">
-                    <h3>Service 4</h3>
+                <img class="gallery-item-image" src="img/gallery-4.jpg" alt="Manicure">
+                <div class="gallery-item-overlay">
+                    <img class="overlay-icon" src="img/icon-spa.png" alt="">
+                    <h3>Manicure</h3>
                 </div>
             </a>
         </div>
     </section>
 
-    <section class="treatments">
+    <section id="treatments" class="treatments">
         <div class="container">
             <header class="section-header">
                 <h2>Popular treatments</h2>
@@ -118,33 +126,33 @@
                     rejuvenation.
                 </p>
             </header>
-            <div class="treatments-infoboxes">
-                <div class="infobox">
+            <div class="triple-box">
+                <div class="box">
                     <img src="img/treatments-1.jpg" alt="Procedure 1">
                     <h3>Face mask</h3>
                     <p>Indulge in the ultimate self-care experience with our selection of nourishing face masks,
                         tailored to your unique skin type.</p>
                     <button class="btn">Read more</button>
                 </div>
-                <div class="infobox">
+                <div class="box">
                     <img src="img/treatments-2.jpg" alt="Procedure 2">
                     <h3>Aromatherapy</h3>
-                    <p>Relax and rejuvenate your mind, body, and soul with our aromatherapy treatments, featuring pure
-                        essential oils and soothing massage techniques.</p>
+                    <p>Relax your mind, body, and soul with our aromatherapy treatments, featuring pure
+                        essential oils and soothing sounds.</p>
                     <button class="btn">Read more</button>
                 </div>
-                <div class="infobox">
+                <div class="box">
                     <img src="img/treatments-3.jpg" alt="Procedure 3">
                     <h3>Massage therapy</h3>
-                    <p>Experience the healing power of touch with our expert massage therapy services, designed to ease
-                        tension, promote relaxation, and improve overall well-being.</p>
+                    <p>Experience the healing power of touch with our expert massage, designed to ease
+                        tension and improve overall well-being.</p>
                     <button class="btn">Read more</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="team">
+    <section id="team" class="team">
         <div class="container">
             <header class="section-header">
                 <h2>Experienced team</h2>
@@ -152,8 +160,8 @@
                     exceptional
                     results with personalized care and attention to detail.</p>
             </header>
-            <div class="team-infoboxes">
-                <div class="infobox">
+            <div class="triple-box">
+                <div class="box">
                     <img src="img/team-1.jpg" alt="Team member 1">
                     <h3>Isabella Garcia</h3>
                     <p>Skincare Specialist</p>
@@ -163,7 +171,7 @@
                         <a href=""><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
-                <div class="infobox">
+                <div class="box">
                     <img src="img/team-2.jpg" alt="Team member 2">
                     <h3>Alexander Nguyen</h3>
                     <p>Nail Technician</p>
@@ -173,7 +181,7 @@
                         <a href=""><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
-                <div class="infobox">
+                <div class="box">
                     <img src="img/team-3.jpg" alt="Team member 3">
                     <h3>Olivia Patel</h3>
                     <p>Massage Therapist</p>
@@ -188,13 +196,15 @@
     </section>
 
     <section class="book">
-        <img src="img/book.jpg" alt="">
-        <form>
-            <input name="name" id="name">
-            <input name="book-mail" id="book-mail" type="email">
-            <textarea name="notes" id="notes">Your notes</textarea>
-            <button type="submit" class="btn">Make an appointment</button>
-        </form>
+        <div class="book-wrapper">
+            <img src="img/book.jpg" alt="">
+            <form>
+                <input name="name" id="name">
+                <input name="book-mail" id="book-mail" type="email">
+                <textarea name="notes" id="notes">Your notes</textarea>
+                <button type="submit" class="btn">Make an appointment</button>
+            </form>
+        </div>
     </section>
 
     <section class="blog">
@@ -205,23 +215,26 @@
                     of
                     beauty professionals. Explore our blog for insider knowledge and exclusive offers.</p>
             </header>
-            <div class="blog-infoboxes">
-                <div class="infobox">
+            <div class="triple-box">
+                <div class="box">
                     <img src="img/blog-1.jpg" alt="Blog post 1">
+                    <p class="post-details"><a href="">Skincare</a> | <a href="">March 03, 2023</a></p>
                     <h3>10 Tips for Glowing Skin</h3>
                     <p>Discover expert tips for achieving a healthy, radiant complexion, from the best skincare products
                         to dietary advice.</p>
                     <button class="btn">Read more</button>
                 </div>
-                <div class="infobox">
+                <div class="box">
                     <img src="img/blog-2.jpg" alt="Blog post 2">
+                    <p class="post-details"><a href="">Relaxation</a> | <a href="">March 01, 2023</a></p>
                     <h3>The Importance of Foot Care</h3>
                     <p>Discover the benefits of regular foot care, from preventing pain and discomfort to improving
                         overall health and well-being.</p>
                     <button class="btn">Read more</button>
                 </div>
-                <div class="infobox">
+                <div class="box">
                     <img src="img/blog-3.jpg" alt="Blog post 3">
+                    <p class="post-details"><a href="">Relaxation</a> | <a href="">February 28, 2023</a></p>
                     <h3>DIY Spa Treatments at Home</h3>
                     <p>Indulge in a relaxing spa experience from the comfort of your own home with these easy and
                         affordable DIY treatments.</p>
@@ -231,7 +244,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <header class="section-header">
                 <h2>Get in touch with us!</h2>
@@ -258,7 +271,7 @@
                 <form>
                     <input name="fname" id="fname">
                     <input name="contact-mail" id="contact-mail" type="email">
-                    <textarea name="message" id="message">Your message</textarea>
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
                     <button type="submit" class="btn">Submit now</button>
                 </form>
             </div>
@@ -270,15 +283,14 @@
         <img class="logo" src="img/logo-txt.png" alt="logo of spa center">
         <nav class="footer-nav">
             <ul class="menu">
-                <li class="menu-item"><a href="">Home</a></li>
-                <li class="menu-item"><a href="">About</a></li>
-                <li class="menu-item"><a href="">Feature</a></li>
-                <li class="menu-item"><a href="">Service</a></li>
-                <li class="menu-item"><a href="">Contact</a></li>
+                <li class="menu-item"><a href="#main">Home</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#treatments">Treatments</a></li>
+                <li class="menu-item"><a href="#team">Team</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <p class="copyright"><a href="http://www.freepik.com">Design by Freepik</a></p>
-
     </footer>
 
     <script src="js/main.js">

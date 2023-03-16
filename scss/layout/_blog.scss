@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as v;
+
+.blog .container .blog-infoboxes .infobox p.post-details {
+  text-transform: uppercase;
+  font-weight: 300;
+}

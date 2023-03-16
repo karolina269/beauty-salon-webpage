@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
+
+.main {
+  position: relative;
+  margin-top: 4em;
+  .container {
+    display: flex;
+    gap: 1em;
+    .main-header {
+      @include flex-col-center;
+      flex-basis: 100%;
+      @media screen and (min-width: v.$large) {
+        flex-basis: 60%;
+      }
+      p {
+        padding: 0 5em;
+        margin-bottom: 2em;
+      }
+      .logo {
+        margin-bottom: 1em;
+      }
+      h1 {
+        margin-bottom: 1em;
+        strong {
+          font-size: 2em;
+          text-transform: uppercase;
+          @media only screen and (min-width: v.$extra-large) {
+            font-size: 2.5em;
+          }
+        }
+        span {
+          display: inline-block;
+          font-family: v.$decorative-font;
+          font-size: 1.5em;
+          line-height: 2em;
+          width: 10em;
+          color: #fff;
+          background-image: url("../img/paint.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+    .main-image-wrapper {
+      position: relative;
+      display: none;
+      @media only screen and (min-width: v.$large) {
+        @include flex-col-center;
+        img {
+          height: 38em;
+        }
+        .sticker {
+          @include flex-col-center;
+          @include absolute(250px, 0, 0, -20px);
+          background-color: #fff;
+          font-size: 1.25em;
+          border-radius: 50%;
+          border: dashed 2px v.$basic-color;
+          outline: solid 5px #fff;
+          height: 150px;
+          width: 150px;
+          span {
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

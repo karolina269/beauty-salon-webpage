@@ -1,0 +1,82 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: v.$primary-font;
+  color: v.$basic-color;
+}
+a {
+  text-decoration: none;
+  color: v.$basic-color;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+section {
+  margin-bottom: 60px;
+  .section-header {
+    h2 {
+      font-family: v.$decorative-font;
+      font-size: 2em;
+      text-transform: capitalize;
+      margin-bottom: 1em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+h3 {
+  font-family: v.$decorative-font;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (min-width: v.$large) {
+    max-width: 960px;
+  }
+  @media screen and (min-width: v.$extra-large) {
+    max-width: 1140px;
+  }
+  .triple-box {
+    @include flex-row-center;
+    .box {
+      flex-basis: 100%;
+      padding: 10px;
+      border: 1px solid #e2e5ea;
+      &:hover {
+        box-shadow: 0 5px 20px #f0f0f0;
+      }
+      img {
+        max-width: 100%;
+      }
+      @media screen and (min-width: v.$medium) {
+        margin: 0 1.5%;
+        flex-basis: 30%;
+      }
+    }
+  }
+}
+.logo {
+  width: 100px;
+}

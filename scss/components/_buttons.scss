@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as v;
+
+.btn {
+  background-color: v.$accent-color;
+  color: v.$basic-color;
+  font-family: v.$button-font;
+  font-weight: 600px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 20px;
+  &:hover {
+    background-color: v.$basic-color;
+    color: v.$accent-color;
+  }
+}
+
+form .btn {
+  background-color: white;
+  &:hover {
+    color: white;
+  }
+}

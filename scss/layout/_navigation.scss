@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+  padding: 1.25em 0;
+  .mobile i {
+    @media only screen and (min-width: v.$large) {
+      display: none;
+    }
+  }
+  .menu {
+    display: flex;
+    gap: 2em;
+    @media only screen and (min-width: v.$large) {
+      width: 100%;
+    }
+  }
+  .menu-item a {
+    color: v.$basic-color;
+    font-weight: 600;
+  }
+  li.social-media {
+    margin-left: auto;
+    .social-media-list {
+      display: flex;
+      gap: 1em;
+      .social-media-item a {
+        color: v.$accent-color-muted;
+      }
+    }
+  }
+}
