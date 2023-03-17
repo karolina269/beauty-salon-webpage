@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
+
+form {
+  @include flex-col(center, flex-start);
+  gap: 1em;
+  flex-basis: 100%;
+  @media screen and (min-width: v.$large) {
+    flex-basis: 60%;
+  }
+  textarea {
+    height: 6em;
+  }
+  input,
+  textarea,
+  select {
+    font-family: v.$primary-font;
+    font-size: 1em;
+    background-color: v.$accent-color;
+    border: 0;
+    border-bottom: 1px solid v.$basic-color;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    &:focus {
+      outline-color: v.$basic-color;
+    }
+  }
+}

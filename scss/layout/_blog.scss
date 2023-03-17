@@ -1,6 +1,11 @@
-@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
 
-.blog .container .blog-infoboxes .infobox p.post-details {
-  text-transform: uppercase;
-  font-weight: 300;
+.blog .triple-box {
+  img {
+    margin-bottom: 1em;
+  }
+  p.post-details {
+    @include text-upper-light;
+    font-size: 0.75em;
+  }
 }

@@ -8,7 +8,7 @@
     display: flex;
     gap: 1em;
     .main-header {
-      @include flex-col-center;
+      @include flex-col(center, center);
       flex-basis: 100%;
       @media screen and (min-width: v.$large) {
         flex-basis: 60%;
@@ -47,12 +47,12 @@
       position: relative;
       display: none;
       @media only screen and (min-width: v.$large) {
-        @include flex-col-center;
+        display: block;
         img {
           height: 38em;
         }
         .sticker {
-          @include flex-col-center;
+          @include flex-col(center, center);
           @include absolute(250px, 0, 0, -20px);
           background-color: #fff;
           font-size: 1.25em;

@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
 
 .main-nav {
   position: fixed;
@@ -19,18 +20,37 @@
     @media only screen and (min-width: v.$large) {
       width: 100%;
     }
-  }
-  .menu-item a {
-    color: v.$basic-color;
-    font-weight: 600;
-  }
-  li.social-media {
-    margin-left: auto;
-    .social-media-list {
-      display: flex;
-      gap: 1em;
-      .social-media-item a {
-        color: v.$accent-color-muted;
+    li {
+      &.menu-item {
+        a {
+          color: v.$basic-color;
+          font-weight: 600;
+        }
+        &.search {
+          position: relative;
+          input {
+            border: 1px solid #e2e5ea;
+            border-radius: 30px;
+            box-shadow: inset 2px 2px 2px #e2e5ea;
+            padding: 0.25em 0.75em;
+            &:focus {
+              outline: none;
+            }
+          }
+          i {
+            @include absolute(3px, 0, 0, 150px);
+          }
+        }
+      }
+      &.social-media {
+        margin-left: auto;
+        .social-media-list {
+          display: flex;
+          gap: 1em;
+          .social-media-item a {
+            color: v.$accent-color-muted;
+          }
+        }
       }
     }
   }

@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
+
+.triple-box {
+  @include flex-row(center, stretch);
+  .box-outer {
+    padding: 25px 10px 0px;
+    @media screen and (min-width: v.$medium) {
+      flex-basis: 33.33%;
+    }
+    .box-inner {
+      padding: 25px;
+      border: 1px solid #e2e5ea;
+      border-radius: 2px;
+      &:hover {
+        box-shadow: 0 5px 20px #f0f0f0;
+      }
+      img {
+        width: 100%;
+      }
+      p {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}

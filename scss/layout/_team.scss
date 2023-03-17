@@ -1,5 +1,45 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as *;
 
-.team .container .team-infoboxes .team-social-media a:hover {
-  color: v.$accent-color-muted;
+.team {
+  .section-header p {
+    margin-bottom: 2.25em;
+  }
+  .triple-box .box {
+    padding: 0 10px;
+    margin-bottom: 60px;
+    position: relative;
+    @media screen and (min-width: v.$medium) {
+      flex-basis: 33.33%;
+    }
+    img {
+      width: 100%;
+    }
+    .card {
+      @include absolute(auto, 0, -50px, 0);
+      margin: auto;
+      width: 80%;
+      background-color: #fff;
+      transition: all 0.5s;
+      &:hover {
+        box-shadow: 0 5px 20px #f0f0f0;
+        padding-bottom: 30px;
+        .team-social-media {
+          height: 2em;
+        }
+      }
+      .team-social-media {
+        height: 0;
+        overflow: hidden;
+        a {
+          display: inline-block;
+          font-size: 1.5em;
+          margin: 0.25em;
+          &:hover {
+            color: v.$accent-color-muted;
+          }
+        }
+      }
+    }
+  }
 }

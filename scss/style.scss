@@ -5,12 +5,13 @@
 @use "base/base";
 
 @use "components/buttons";
+@use "components/triple-box";
+@use "components/forms";
 
 @use "layout/navigation";
 @use "layout/main";
 @use "layout/about";
 @use "layout/gallery";
-@use "layout/treatments";
 @use "layout/team";
 @use "layout/book";
 @use "layout/blog";

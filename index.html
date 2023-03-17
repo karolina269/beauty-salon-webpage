@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                     <li class="menu-item"><a href="#treatments">Treatments</a></li>
                     <li class="menu-item"><a href="#team">Team</a></li>
                     <li class="menu-item"><a href="#contact">Contact</a></li>
-                    <li class="menu-item"><input type="text"><i class="bi bi-search"></i></li>
+                    <li class="menu-item search"><input type="search"><i class="bi bi-search"></i></li>
                     <li class="social-media">
                         <ul class="social-media-list">
                             <li class="social-media-item"><a href=""><i class="bi bi-twitter"></i></a></li>
@@ -75,12 +75,13 @@
             <header class="section-header">
                 <p class="section-header-description">About our spa center</p>
                 <h2>Discover inner peace...</h2>
-                <p>Step into our world of beauty and wellness where inspiration awaits. Our expert team of beauty
-                    professionals
-                    are dedicated to enhancing your natural beauty and helping you feel confident and radiant. Come and
-                    experience our personalized approach to beauty, and let us inspire your inner glow.</p>
             </header>
-            <button class="btn">Read more</button>
+            <p class="about-content">Step into our world of beauty and wellness where inspiration awaits. Our expert
+                team of beauty
+                professionals
+                are dedicated to enhancing your natural beauty and helping you feel confident and radiant. Come and
+                experience our personalized approach to beauty, and let us inspire your inner glow.</p>
+            <a href="" class="btn">Read more</a>
         </div>
     </section>
 
@@ -127,26 +128,32 @@
                 </p>
             </header>
             <div class="triple-box">
-                <div class="box">
-                    <img src="img/treatments-1.jpg" alt="Procedure 1">
-                    <h3>Face mask</h3>
-                    <p>Indulge in the ultimate self-care experience with our selection of nourishing face masks,
-                        tailored to your unique skin type.</p>
-                    <button class="btn">Read more</button>
+                <div class="box-outer">
+                    <div class="box-inner">
+                        <img src="img/treatments-1.jpg" alt="Procedure 1">
+                        <h3>Face mask</h3>
+                        <p>Indulge in the ultimate self-care experience with our selection of nourishing face masks,
+                            tailored to your unique skin type.</p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="img/treatments-2.jpg" alt="Procedure 2">
-                    <h3>Aromatherapy</h3>
-                    <p>Relax your mind, body, and soul with our aromatherapy treatments, featuring pure
-                        essential oils and soothing sounds.</p>
-                    <button class="btn">Read more</button>
+                <div class="box-outer">
+                    <div class="box-inner">
+                        <img src="img/treatments-2.jpg" alt="Procedure 2">
+                        <h3>Aromatherapy</h3>
+                        <p>Relax your mind, body, and soul with our aromatherapy treatments, featuring pure
+                            essential oils and soothing sounds.</p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="img/treatments-3.jpg" alt="Procedure 3">
-                    <h3>Massage therapy</h3>
-                    <p>Experience the healing power of touch with our expert massage, designed to ease
-                        tension and improve overall well-being.</p>
-                    <button class="btn">Read more</button>
+                <div class="box-outer">
+                    <div class="box-inner">
+                        <img src="img/treatments-3.jpg" alt="Procedure 3">
+                        <h3>Massage therapy</h3>
+                        <p>Experience the healing power of touch with our expert massage, designed to ease
+                            tension and improve overall well-being.</p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,32 +170,38 @@
             <div class="triple-box">
                 <div class="box">
                     <img src="img/team-1.jpg" alt="Team member 1">
-                    <h3>Isabella Garcia</h3>
-                    <p>Skincare Specialist</p>
-                    <div class="team-social-media">
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
+                    <div class="card">
+                        <h3>Isabella Garcia</h3>
+                        <p>Skincare Specialist</p>
+                        <div class="team-social-media">
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="box">
                     <img src="img/team-2.jpg" alt="Team member 2">
-                    <h3>Alexander Nguyen</h3>
-                    <p>Nail Technician</p>
-                    <div class="team-social-media">
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
+                    <div class="card">
+                        <h3>Alexander Nguyen</h3>
+                        <p>Nail Technician</p>
+                        <div class="team-social-media">
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="box">
                     <img src="img/team-3.jpg" alt="Team member 3">
-                    <h3>Olivia Patel</h3>
-                    <p>Massage Therapist</p>
-                    <div class="team-social-media">
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
+                    <div class="card">
+                        <h3>Olivia Patel</h3>
+                        <p>Massage Therapist</p>
+                        <div class="team-social-media">
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,11 +210,11 @@
 
     <section class="book">
         <div class="book-wrapper">
-            <img src="img/book.jpg" alt="">
+            <div class="book-image" style="background-image: url(img/book-bg.jpg);"></div>
             <form>
                 <input name="name" id="name">
                 <input name="book-mail" id="book-mail" type="email">
-                <textarea name="notes" id="notes">Your notes</textarea>
+                <textarea name="notes" id="notes" placeholder="Your notes"></textarea>
                 <button type="submit" class="btn">Make an appointment</button>
             </form>
         </div>
@@ -216,29 +229,36 @@
                     beauty professionals. Explore our blog for insider knowledge and exclusive offers.</p>
             </header>
             <div class="triple-box">
-                <div class="box">
-                    <img src="img/blog-1.jpg" alt="Blog post 1">
-                    <p class="post-details"><a href="">Skincare</a> | <a href="">March 03, 2023</a></p>
-                    <h3>10 Tips for Glowing Skin</h3>
-                    <p>Discover expert tips for achieving a healthy, radiant complexion, from the best skincare products
-                        to dietary advice.</p>
-                    <button class="btn">Read more</button>
+                <div class="box-outer">
+                    <div class="box-inner">
+                        <img src="img/blog-1.jpg" alt="Blog post 1">
+                        <p class="post-details"><a href="">Skincare</a> | <a href="">March 03, 2023</a></p>
+                        <h3>10 Tips for Glowing Skin</h3>
+                        <p>Discover expert tips for achieving a healthy, radiant complexion, from the best skincare
+                            products
+                            to dietary advice.</p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="img/blog-2.jpg" alt="Blog post 2">
-                    <p class="post-details"><a href="">Relaxation</a> | <a href="">March 01, 2023</a></p>
-                    <h3>The Importance of Foot Care</h3>
-                    <p>Discover the benefits of regular foot care, from preventing pain and discomfort to improving
-                        overall health and well-being.</p>
-                    <button class="btn">Read more</button>
+                <div class="box-outer">
+                    <div class="box-inner">
+                        <img src="img/blog-2.jpg" alt="Blog post 2">
+                        <p class="post-details"><a href="">Relaxation</a> | <a href="">March 01, 2023</a></p>
+                        <h3>The Importance of Foot Care</h3>
+                        <p>Discover the benefits of regular foot care, from preventing pain and discomfort to improving
+                            overall health and well-being.</p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="img/blog-3.jpg" alt="Blog post 3">
-                    <p class="post-details"><a href="">Relaxation</a> | <a href="">February 28, 2023</a></p>
-                    <h3>DIY Spa Treatments at Home</h3>
-                    <p>Indulge in a relaxing spa experience from the comfort of your own home with these easy and
-                        affordable DIY treatments.</p>
-                    <button class="btn">Read more</button>
+                <div class="box-outer">
+                    <div class="box-inner">
+                        <img src="img/blog-3.jpg" alt="Blog post 3">
+                        <p class="post-details"><a href="">Relaxation</a> | <a href="">February 28, 2023</a></p>
+                        <h3>DIY Spa Treatments at Home</h3>
+                        <p>Indulge in a relaxing spa experience from the comfort of your own home with these easy and
+                            affordable DIY treatments.</p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -255,12 +275,11 @@
                 <address>
                     <div class="address-item">
                         <i class="bi bi-map"></i>
-                        <p>123 Main Street</p>
-                        <p>New York, NY 10001</p>
+                        <p>123 Main Street <br>New York, NY 10001</p>
                     </div>
                     <div class="address-item">
                         <i class="bi bi-envelope"></i>
-                        <p>Email: info@spacenter.com</p>
+                        <p>Mail: info@spacenter.com</p>
 
                     </div>
                     <div class="address-item">

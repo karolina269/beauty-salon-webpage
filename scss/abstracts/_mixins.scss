@@ -13,17 +13,17 @@
   left: $left;
 }
 
-@mixin flex-row-center {
+@mixin flex-row($justify, $align) {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: $justify;
+  align-items: $align;
 }
 
-@mixin flex-col-center {
+@mixin flex-col($justify, $align) {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: $justify;
+  align-items: $align;
 }

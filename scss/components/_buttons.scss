@@ -1,14 +1,17 @@
 @use "../abstracts/variables" as v;
 
 .btn {
+  display: inline-block;
   background-color: v.$accent-color;
   color: v.$basic-color;
   font-family: v.$button-font;
-  font-weight: 600px;
+  font-weight: 600;
   text-transform: uppercase;
   border: 0;
   border-radius: 30px;
   padding: 10px 20px;
+  transition: all 0.5s;
+  cursor: pointer;
   &:hover {
     background-color: v.$basic-color;
     color: v.$accent-color;
