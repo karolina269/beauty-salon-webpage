@@ -23,24 +23,26 @@
 
                 <div class="mobile hamburger"><i class="bi bi-list"></i></div>
 
-                <div class="mobile close"><i class="bi bi-x"></i></div>
+                <div class="open-menu-wrapper">
 
-                <ul class="menu">
-                    <li class="menu-item"><a href="#main">Home</a></li>
-                    <li class="menu-item"><a href="#about">About</a></li>
-                    <li class="menu-item"><a href="#treatments">Treatments</a></li>
-                    <li class="menu-item"><a href="#team">Team</a></li>
-                    <li class="menu-item"><a href="#contact">Contact</a></li>
-                    <li class="menu-item search"><input type="search"><i class="bi bi-search"></i></li>
-                    <li class="social-media">
-                        <ul class="social-media-list">
-                            <li class="social-media-item"><a href=""><i class="bi bi-twitter"></i></a></li>
-                            <li class="social-media-item"><a href=""><i class="bi bi-facebook"></i></a></li>
-                            <li class="social-media-item"><a href=""><i class="bi bi-instagram"></i></a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    <div class="mobile close"><i class="bi bi-x"></i></div>
 
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#main">Home</a></li>
+                        <li class="menu-item"><a href="#about">About</a></li>
+                        <li class="menu-item"><a href="#treatments">Treatments</a></li>
+                        <li class="menu-item"><a href="#team">Team</a></li>
+                        <li class="menu-item"><a href="#contact">Contact</a></li>
+                        <li class="menu-item search"><input type="search"><i class="bi bi-search"></i></li>
+                        <li class="social-media">
+                            <ul class="social-media-list">
+                                <li class="social-media-item"><a href=""><i class="bi bi-twitter"></i></a></li>
+                                <li class="social-media-item"><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li class="social-media-item"><a href=""><i class="bi bi-instagram"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -58,7 +60,7 @@
                     are dedicated to helping you look and feel your best. Escape the stresses of everyday life and treat
                     yourself to a luxurious beauty experience that will leave you feeling refreshed, rejuvenated, and
                     ready to take on the world.</p>
-                <a href="" class="btn">Book now</a>
+                <a href="#book" class="btn">Book now</a>
             </header>
             <div class="main-image-wrapper">
                 <img class="main-image" src="img/header.png" alt="">
@@ -208,12 +210,21 @@
         </div>
     </section>
 
-    <section class="book">
+    <section id="book" class="book">
         <div class="book-wrapper">
             <div class="book-image" style="background-image: url(img/book-bg.jpg);"></div>
             <form>
-                <input name="name" id="name">
-                <input name="book-mail" id="book-mail" type="email">
+                <input name="book-name" id="book-name" placeholder="Name">
+                <input name="book-mail" id="book-mail" type="email" placeholder="Email address">
+                <input name="book-phone" id="book-phone" type="tel" placeholder="Phone number">
+                <select name="book-service" id="book-service" required>
+                    <option value="" disabled selected hidden>Select service</option>
+                    <option value="massage">Massage</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="skincare">Skincare</option>
+                </select>
+                <input name="book-date" id="book-date" type="date" required>
+                <input name="book-time" id="book-time" type="time" required>
                 <textarea name="notes" id="notes" placeholder="Your notes"></textarea>
                 <button type="submit" class="btn">Make an appointment</button>
             </form>

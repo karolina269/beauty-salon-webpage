@@ -4,7 +4,7 @@
 .contact {
   background-color: v.$accent-color;
   padding: 3em 0;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   .contact-wrapper {
     @include flex-row(center, center);
     width: 100%;

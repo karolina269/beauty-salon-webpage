@@ -2,15 +2,13 @@
 @use "../abstracts/mixins" as *;
 
 form {
-  @include flex-col(center, flex-start);
+  @include flex-col(space-between, flex-start);
   gap: 1em;
   flex-basis: 100%;
   @media screen and (min-width: v.$large) {
     flex-basis: 60%;
   }
-  textarea {
-    height: 6em;
-  }
+
   input,
   textarea,
   select {
@@ -24,6 +22,22 @@ form {
     width: 100%;
     &:focus {
       outline-color: v.$basic-color;
+    }
+  }
+  textarea {
+    height: 6em;
+    margin-bottom: 2em;
+  }
+  input[type="date"]:invalid,
+  input[type="date"]:invalid {
+    color: grey;
+  }
+  select {
+    &:invalid {
+      color: grey;
+    }
+    option {
+      color: black;
     }
   }
 }

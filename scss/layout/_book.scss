@@ -20,7 +20,14 @@
       }
     }
     form {
+      flex-direction: row;
       padding: 80px;
+      @media screen and (min-width: v.$large) {
+        input,
+        select {
+          width: 45%;
+        }
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .triple-box {
-  @include flex-row(center, stretch);
+  @include flex-row(center, flex-start);
   .box-outer {
     padding: 25px 10px 0px;
     @media screen and (min-width: v.$medium) {

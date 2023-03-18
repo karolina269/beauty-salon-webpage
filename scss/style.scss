@@ -1,7 +1,7 @@
 @use "abstracts/variables";
 @use "abstracts/mixins";
 
-@use "base/normalize";
+@use "base/normalize/import-now";
 @use "base/base";
 
 @use "components/buttons";

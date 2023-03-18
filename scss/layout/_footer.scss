@@ -3,7 +3,7 @@
 
 footer {
   @include flex-col(center, center);
-  gap: 1em;
+  gap: 2em;
   padding-bottom: 2em;
   .footer-nav .menu {
     display: flex;
