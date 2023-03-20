@@ -563,7 +563,13 @@ form select {
 form input:focus,
 form textarea:focus,
 form select:focus {
+  outline: 2px solid;
   outline-color: #7e7d78;
+}
+form input.error,
+form textarea.error,
+form select.error {
+  border-bottom: 1px solid #ff0000;
 }
 form textarea {
   height: 6em;
@@ -572,8 +578,9 @@ form textarea {
 form input[type=date]:invalid, form input[type=time]:invalid {
   color: grey;
 }
-form input:-internal-autofill-selected {
-  background-color: #fee6dc !important;
+form input:-webkit-autofill {
+  background-color: #fff !important;
+  box-shadow: 0 0 0 100px #fff inset;
 }
 form select:invalid {
   color: grey;
@@ -581,8 +588,15 @@ form select:invalid {
 form select option {
   color: black;
 }
-form p .error {
+form p {
+  font-weight: 500;
+  flex-basis: 100%;
+  margin-top: 1em;
+  padding-left: 0.5em;
+}
+form p.error {
   color: #ff0000;
+  border: none;
 }
 
 .main-nav {
@@ -654,6 +668,7 @@ form p .error {
 }
 .main-nav .menu li.menu-item form {
   position: relative;
+  gap: 0;
 }
 .main-nav .menu li.menu-item form input {
   background-color: #fff;
@@ -670,19 +685,16 @@ form p .error {
   outline: none;
 }
 .main-nav .menu li.menu-item form i {
+  color: #7e7d78;
   position: absolute;
   top: 8px;
   right: 8px;
-  bottom: 0;
-  left: 0;
 }
 @media only screen and (min-width: 992px) {
   .main-nav .menu li.menu-item form i {
     position: absolute;
     top: 5px;
     right: 5px;
-    bottom: 0;
-    left: 0;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -770,9 +782,7 @@ form p .error {
     align-items: center;
     position: absolute;
     top: 250px;
-    right: 0;
-    bottom: 0;
-    left: -20px;
+    right: 350px;
     background-color: #fff;
     font-size: 1.25em;
     border-radius: 50%;
@@ -830,8 +840,6 @@ form p .error {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
   background-color: rgba(254, 230, 220, 0.6);
   color: #fff;
   display: flex;
@@ -868,10 +876,9 @@ form p .error {
 }
 .team .triple-box .box .card {
   position: absolute;
-  top: auto;
-  right: 0;
   bottom: -50px;
   left: 0;
+  right: 0;
   margin: auto;
   width: 80%;
   background-color: #fff;
@@ -886,6 +893,7 @@ form p .error {
 }
 .team .triple-box .box .card .team-social-media {
   height: 0;
+  transition: all 0.5s;
   overflow: hidden;
 }
 .team .triple-box .box .card .team-social-media a {
@@ -903,16 +911,10 @@ form p .error {
 .book .book-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 992px) {
-  .book .book-wrapper {
-    justify-content: flex-start;
-  }
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .book .book-wrapper .book-image {
-  height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

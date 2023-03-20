@@ -35,7 +35,7 @@
                         <li class="menu-item"><a href="#contact">Contact</a></li>
                         <li class="menu-item search">
                             <form id="searchbar">
-                                <input type="search"><i class="bi bi-search"></i>
+                                <input type="search"><button type="submit"><i class="bi bi-search"></i></button>
                             </form>
                         </li>
                         <li class="social-media">
@@ -219,7 +219,7 @@
             <div class="book-image" style="background-image: url(img/book-bg.jpg);"></div>
             <form id="book-form">
                 <input name="book-name" id="book-name" placeholder="Name">
-                <input name="book-mail" id="book-mail" type="email" placeholder="Email address">
+                <input name="book-email" id="book-email" type="email" placeholder="Email address">
                 <input name="book-phone" id="book-phone" type="tel" placeholder="Phone number">
                 <select name="book-service" id="book-service" required>
                     <option value="" disabled selected hidden>Select service</option>
@@ -230,7 +230,7 @@
                 <input name="book-date" id="book-date" type="date" required>
                 <input name="book-time" id="book-time" type="time" required>
                 <textarea name="notes" id="notes" placeholder="Your notes"></textarea>
-                <button type="submit" class="btn">Make an appointment</button>
+                <button type="submit" class="btn" formnovalidate>Make an appointment</button>
                 <p id="book-message"></p>
             </form>
         </div>
@@ -303,11 +303,12 @@
                         <p>Phone: (555) 123-4567</p>
                     </div>
                 </address>
-                <form>
-                    <input name="fname" id="fname">
-                    <input name="contact-mail" id="contact-mail" type="email">
-                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <form id="contact-form">
+                    <input name="contact-name" id="contact-name">
+                    <input name="contact-email" id="contact-email" type="email">
+                    <textarea name="contact-message" id="contact-message" placeholder="Your message"></textarea>
                     <button type="submit" class="btn">Submit now</button>
+                    <p id="contact-message"></p>
                 </form>
             </div>
 

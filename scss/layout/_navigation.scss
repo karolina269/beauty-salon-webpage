@@ -60,6 +60,7 @@
         }
         form {
           position: relative;
+          gap: 0;
           input {
             background-color: #fff;
             border: 1px solid #e2e5ea;
@@ -75,9 +76,10 @@
             }
           }
           i {
-            @include absolute(8px, 8px, 0, 0);
+            color: v.$basic-color;
+            @include absolute(8px, 8px);
             @media only screen and (min-width: v.$large) {
-              @include absolute(5px, 5px, 0, 0);
+              @include absolute(5px, 5px);
             }
           }
         }

@@ -19,7 +19,7 @@
       object-fit: cover;
     }
     .gallery-item-overlay {
-      @include absolute(0, 0, 0, 0);
+      @include absolute(0, 0);
       background-color: rgba(v.$accent-color, 0.6);
       color: #fff;
       display: flex;

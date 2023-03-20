@@ -5,12 +5,10 @@
   font-weight: 300;
 }
 
-@mixin absolute($top, $right, $bottom, $left) {
+@mixin absolute($top, $right) {
   position: absolute;
   top: $top;
   right: $right;
-  bottom: $bottom;
-  left: $left;
 }
 
 @mixin flex-row($justify, $align) {

@@ -4,12 +4,8 @@
 .book {
   background-color: v.$accent-color;
   .book-wrapper {
-    @include flex-row(center, center);
-    @media screen and (min-width: v.$large) {
-      justify-content: flex-start;
-    }
+    @include flex-row(flex-start, stretch);
     .book-image {
-      height: 600px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
