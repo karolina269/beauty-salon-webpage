@@ -33,7 +33,11 @@
                         <li class="menu-item"><a href="#treatments">Treatments</a></li>
                         <li class="menu-item"><a href="#team">Team</a></li>
                         <li class="menu-item"><a href="#contact">Contact</a></li>
-                        <li class="menu-item search"><input type="search"><i class="bi bi-search"></i></li>
+                        <li class="menu-item search">
+                            <form id="searchbar">
+                                <input type="search"><i class="bi bi-search"></i>
+                            </form>
+                        </li>
                         <li class="social-media">
                             <ul class="social-media-list">
                                 <li class="social-media-item"><a href=""><i class="bi bi-twitter"></i></a></li>
@@ -213,7 +217,7 @@
     <section id="book" class="book">
         <div class="book-wrapper">
             <div class="book-image" style="background-image: url(img/book-bg.jpg);"></div>
-            <form>
+            <form id="book-form">
                 <input name="book-name" id="book-name" placeholder="Name">
                 <input name="book-mail" id="book-mail" type="email" placeholder="Email address">
                 <input name="book-phone" id="book-phone" type="tel" placeholder="Phone number">
@@ -227,6 +231,7 @@
                 <input name="book-time" id="book-time" type="time" required>
                 <textarea name="notes" id="notes" placeholder="Your notes"></textarea>
                 <button type="submit" class="btn">Make an appointment</button>
+                <p id="book-message"></p>
             </form>
         </div>
     </section>

@@ -569,15 +569,20 @@ form textarea {
   height: 6em;
   margin-bottom: 2em;
 }
-form input[type=date]:invalid,
-form input[type=date]:invalid {
+form input[type=date]:invalid, form input[type=time]:invalid {
   color: grey;
+}
+form input:-internal-autofill-selected {
+  background-color: #fee6dc !important;
 }
 form select:invalid {
   color: grey;
 }
 form select option {
   color: black;
+}
+form p .error {
+  color: #ff0000;
 }
 
 .main-nav {
@@ -647,22 +652,24 @@ form select option {
   color: #7e7d78;
   font-weight: 600;
 }
-.main-nav .menu li.menu-item.search {
+.main-nav .menu li.menu-item form {
   position: relative;
 }
-.main-nav .menu li.menu-item.search input {
+.main-nav .menu li.menu-item form input {
+  background-color: #fff;
   border: 1px solid #e2e5ea;
   border-radius: 30px;
   box-shadow: inset 2px 2px 2px #e2e5ea;
   padding: 0.25em 0.75em;
+  margin-bottom: 0;
 }
-.main-nav .menu li.menu-item.search input::-webkit-search-cancel-button {
+.main-nav .menu li.menu-item form input::-webkit-search-cancel-button {
   display: none;
 }
-.main-nav .menu li.menu-item.search input:focus {
+.main-nav .menu li.menu-item form input:focus {
   outline: none;
 }
-.main-nav .menu li.menu-item.search i {
+.main-nav .menu li.menu-item form i {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -670,7 +677,7 @@ form select option {
   left: 0;
 }
 @media only screen and (min-width: 992px) {
-  .main-nav .menu li.menu-item.search i {
+  .main-nav .menu li.menu-item form i {
     position: absolute;
     top: 5px;
     right: 5px;

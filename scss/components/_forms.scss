@@ -28,9 +28,14 @@ form {
     height: 6em;
     margin-bottom: 2em;
   }
-  input[type="date"]:invalid,
-  input[type="date"]:invalid {
-    color: grey;
+  input {
+    &[type="date"]:invalid,
+    &[type="time"]:invalid {
+      color: grey;
+    }
+    &:-internal-autofill-selected {
+      background-color: v.$accent-color !important;
+    }
   }
   select {
     &:invalid {
@@ -38,6 +43,14 @@ form {
     }
     option {
       color: black;
+    }
+  }
+  p {
+    .send {
+      //
+    }
+    .error {
+      color: #ff0000;
     }
   }
 }

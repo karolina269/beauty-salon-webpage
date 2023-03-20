@@ -58,13 +58,15 @@
           color: v.$basic-color;
           font-weight: 600;
         }
-        &.search {
+        form {
           position: relative;
           input {
+            background-color: #fff;
             border: 1px solid #e2e5ea;
             border-radius: 30px;
             box-shadow: inset 2px 2px 2px #e2e5ea;
             padding: 0.25em 0.75em;
+            margin-bottom: 0;
             &::-webkit-search-cancel-button {
               display: none;
             }
