@@ -1,7 +1,7 @@
-#webpage-html-css-js-sass
+# webpage-html-css-js-sass
 Beauty salon webpage
 
-##Built with
+## Built with
 
 - HTML5
 - CSS3
@@ -9,15 +9,15 @@ Beauty salon webpage
 - SASS
 - JavaScript
 
-##Features
+## Features
 
 Book an appointment with fetch API.
 
-##Mobile support
+## Mobile support
 
 The webpage is responsive (RWD) and created in the spirit of the Mobile First approach.
 
-##Project Status
+## Project Status
 
 Completed
 
