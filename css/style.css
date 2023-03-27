@@ -541,11 +541,11 @@ form {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1em;
-  flex-basis: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   form {
-    flex-basis: 60%;
+    width: 60%;
   }
 }
 form input,
@@ -590,7 +590,7 @@ form select option {
 }
 form p {
   font-weight: 500;
-  flex-basis: 100%;
+  width: 100%;
   margin-top: 1em;
   padding-left: 0.5em;
 }
@@ -725,11 +725,11 @@ form p.error {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-basis: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   .main .container .main-header {
-    flex-basis: 60%;
+    width: 60%;
   }
 }
 .main .container .main-header p {
