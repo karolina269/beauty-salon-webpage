@@ -1,4 +1,4 @@
-# beauty-salon-webpage
+# Beauty-salon-webpage
 Responsive one page website for beauty salon
 
 ## Built with
