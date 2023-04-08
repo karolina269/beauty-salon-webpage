@@ -1,5 +1,5 @@
-# webpage-html-css-js-sass
-Beauty salon webpage
+# beauty-salon-webpage
+Responsive one page website for beauty salon
 
 ## Built with
 
